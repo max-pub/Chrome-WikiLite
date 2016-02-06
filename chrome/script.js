@@ -1,3 +1,13 @@
+var tmp = document.getElementById('content');
+tmp.removeAttribute('class');
+
+
+
+
+
+
+
+
 // var tmp = document.getElementById('mw-panel');
 // tmp.parentNode.removeChild(tmp);
 
@@ -16,5 +26,3 @@
 // var tmp = document.getElementById('footer');
 // tmp.parentNode.removeChild(tmp);
 
-var tmp = document.getElementById('content');
-tmp.removeAttribute('class');
