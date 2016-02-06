@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "WikiLite",
+  "description": "removes the clutter from Wikipedia",
+  "version": "1.0",
+  "author": "www.max.pub",
+  "icons": { "256": "icon.png" },  
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/wiki/*"],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ]
+}
