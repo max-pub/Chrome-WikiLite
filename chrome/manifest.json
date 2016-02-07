@@ -4,7 +4,7 @@
   "description": "removes the clutter from Wikipedia",
   "version": "1.0",
   "author": "www.max.pub",
-  "icons": { "256": "icon.png" },  
+  "icons": { "128": "icon.128.png", "256": "icon.256.png" },  
   "content_scripts": [
     {
       "matches": ["https://*.wikipedia.org/wiki/*"],
