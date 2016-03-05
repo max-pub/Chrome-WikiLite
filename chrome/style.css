@@ -1,64 +1,83 @@
-
-.Vorlage_Belege_fehlen,.mw-editsection,.toctoggle,.ambox-multiple_issues{
-	display: none !important;
+#toc,
+.reflist,
+.references,
+.refbegin,
+.navbox,
+.catlinks,
+.Vorlage_Belege_fehlen,
+.mw-editsection,
+.toctoggle,
+.ambox-multiple_issues {
+    display: none !important;
 }
+
+
 /*#mw-panel,#mw-navigation,#mw-page-base,#mw-head-base,#footer,#siteSub*/
 
-
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro 300'),  format('ttf');
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('bin/Source Sans Pro 300'), format('ttf');
 }
-*{
-	font-family: 'Source Sans Pro';
+
+* {
+    font-family: 'Source Sans Pro';
     font-weight: 300 !important;
     /*font-size: 16px;*/
 }
 
-html{
-	font-size: 24px !important;
+html {
+    font-size: 24px !important;
 }
 
-
-
-body{
-	padding: 50px !important;
-	padding-top: 20px !important;
-	background: white !important;
+body {
+    padding: 50px !important;
+    padding-top: 20px !important;
+    background: white !important;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-weight: 300 !important;
 }
 
-h1, h1 span{
-	font-size: 30px !important;
-	border: none !important;
-}
-h2, h2 span{
-	font-size: 26px !important;
-	border: none !important;
-}
-h3, h3 span{
-	font-size: 22px !important;
-	border: none !important;
-}
-[hidden]{
-	display: none;
+h1,
+h1 span {
+    font-size: 30px !important;
+    border: none !important;
 }
 
-
-#languages{
-	/*position: absolute;*/
-	/*top: 10px;*/
-	/*right: 10px;*/
-	/*border: 1px solid red;*/
-	/*background: orange;*/
-	/*padding: 20px;*/
+h2,
+h2 span {
+    font-size: 26px !important;
+    border: none !important;
 }
 
-#languages img{
-	margin: 5px;
+h3,
+h3 span {
+    font-size: 22px !important;
+    border: none !important;
+}
+
+[hidden] {
+    display: none;
+}
+
+#languages {
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*right: 10px;*/
+    /*border: 1px solid red;*/
+    /*background: orange;*/
+    /*padding: 20px;*/
+}
+
+#languages img {
+    margin: 5px;
+}
+
+#languages ul {
+    -webkit-column-width: 200px;
 }

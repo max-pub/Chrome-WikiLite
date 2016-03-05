@@ -1,12 +1,14 @@
-function removeElement(e){
+function removeElement(e) {
 	e.parentNode.removeChild(e);
 }
-function removeID(id){
+
+function removeID(id) {
 	removeElement(document.getElementById(id));
 }
-function removeClass(name){
+
+function removeClass(name) {
 	var tmp = document.getElementsByClassName(name);
-	for(var i=0; i<tmp.length; i++)
+	for (var i = 0; i < tmp.length; i++)
 		removeElement(tmp[i]);
 }
 
@@ -15,14 +17,15 @@ removeClass('uls-p-lang-dummy');
 
 
 var languages = document.getElementsByClassName('interlanguage-link');
-try{document.body.innerHTML += "<div id='languages'><h3>Languages</h3>"+languages[0].parentNode.parentNode.innerHTML+"</div>";}
-catch(e){}
+try {
+	document.body.innerHTML += "<div id='languages'><h2>Languages</h2>" + languages[0].parentNode.parentNode.innerHTML + "</div>";
+} catch (e) {}
 
 // var flags = "";
 // for(var i=0;i<languages.length; i++){
-// 	var lang = languages[i].children[0];
-// 	var tmp = {lang:lang.getAttribute('lang'), url:lang.getAttribute('href')};
-// 	flags += "<a href='"+tmp.url+"'><img src='chrome-extension://ifpekmonbbfepmjginglhifdjkfimlod/flags/"+tmp.lang.toUpperCase()+".png'/></a>";
+//     var lang = languages[i].children[0];
+//     var tmp = {lang:lang.getAttribute('lang'), url:lang.getAttribute('href')};
+//     flags += "<a href='"+tmp.url+"'><img src='chrome-extension://ifpekmonbbfepmjginglhifdjkfimlod/flags/"+tmp.lang.toUpperCase()+".png'/></a>";
 // }
 // document.body.innerHTML += "<div id='languages'><h3>Languages</h3>"+flags+"</div>";
 
@@ -45,22 +48,9 @@ removeID('siteSub');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // var langList = [];
-	// langList.push(tmp);
-	// console.log('lang',langList);
+// langList.push(tmp);
+// console.log('lang',langList);
 
 
 
